@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-list > li > a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.topbar{
+    padding-bottom: 200px;
+}
+
+body > h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body > p{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+table{
+    border: 2px solid gold;
+}
+
+.table-headers{
+    background-color: goldenrod;
+}
+
+.table-content{
+    background-color: rgb(252, 216, 124);
+}
+
+tr{
+    text-align: center;
+}
+
+footer{
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+time{
+    color: white;
+    background-color: gray;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 267px)  {
+    label{
+        font-size: 25px;
+    }
+        
+    input, textarea{
+        height: 25px;
+        width:200px;
+    }
+
+    body > h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    body > p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .navbar-list{
+        gap: 30px;
+    }
+
+    body > h1{
+        font-size: 40px;
+    }
+
+    body > p{
+        font-size: 20px;
+    }
+
+    tr{
+        font-size: 25px;
+    }
+
+    footer{
+        margin-top: 250px;
+        position: relative;
+    }
+}
+
+
+@media only screen and (max-width: 467px)  {
+    .grid-container{
+        padding-bottom: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 10px;
+    }
+
+    footer{
+        position: relative;
+    }
+}
+
+
+@media only screen and (min-width: 467px)  {
+    label{
+        font-size: 35px;
+    }
+    
+    input, textarea{
+        height: 35px;
+        width:250px;
+    }
+
+    body > h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    body > p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .navbar-list{
+        gap: 50px;
+    }
+
+    body > h1{
+        font-size: 50px;
+    }
+
+    body > p{
+        font-size: 25px;
+    }
+
+    tr{
+        font-size: 30px;
+    }
+
+    footer{
+        margin-top: 200px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 767px)  {
+    .navbar-list{
+        gap: 70px;
+    }
+
+    .grid-container{
+        padding-bottom: 190px;
+    }
+
+    body > h1{
+        font-size: 70px;
+    }
+
+    body > p{
+        font-size: 35px;
+    }
+
+    tr{
+        font-size: 50px;
+    }
+
+    footer{
+        margin-top: 200px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 1024px)  {
+    .navbar-list{
+        gap: 100px;
+    }
+
+    body > h1{
+        font-size: 70px;
+    }
+
+    body > p{
+        font-size: 35px;
+    }
+
+    tr{
+        font-size: 50px;
+    }
+
+    footer{
+        margin-top: 200px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-height: 600px)  {
+    .topbar{
+        padding-bottom: 100px;
+    }
+
+    body{
+        height:fit-content;
+        width: 100vw;
+    }
+
+    body > h1{
+        font-size: 70px;
+    }
+
+    body > p{
+        font-size: 35px;
+    }
+
+    tr{
+        font-size: 50px;
+    }
+
+    footer{
+        margin-top: 100px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 800px) and (max-height: 999px){
+    footer{
+        margin-top: 280px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 1000px) and (max-height: 1100px){
+    .topbar{
+        padding-bottom: 200px;
+    }
+}
+
+@media only screen and (min-height: 1101px) and (max-height: 1250px){
+    .topbar{
+        padding-bottom: 300px;
+    }
+}
+
+@media only screen and (min-height: 1251px)  {
+    .topbar{
+        padding-bottom: 380px;
+    }
+
+    body > h1{
+        font-size: 70px;
+    }
+
+    body > p{
+        font-size: 35px;
+    }
+
+    tr{
+        font-size: 50px;
+    }
+
+    footer{
+        margin-top: 380px;
+        position: relative;
+    }
+}
