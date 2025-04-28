@@ -1,0 +1,303 @@
+@import 'file.scss';
+
+$alignment: center;
+$screen: flex;
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: $screen;
+    flex-direction: column;
+    justify-content: $alignment;
+    align-items: $alignment;
+  
+    > h1 {
+      font-size: 50px;
+      text-align: $alignment;
+      padding-bottom: 10px;
+    }
+  
+    > p {
+      font-size: 20px;
+      text-align: $alignment;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .navbar {
+    display: $screen;
+    justify-content: $alignment;
+    align-items: $alignment;
+    padding-top: 10px;
+  
+    .navbar-list {
+      display: $screen;
+      justify-content: $alignment;
+      align-items: $alignment;
+      list-style: none;
+      gap: 20px;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: gray;
+          font-weight: bold;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  
+  .topbar {
+    padding-bottom: 200px;
+  }
+  
+  table {
+    border: 2px solid gold;
+  }
+  
+  .table-headers {
+    background-color: goldenrod;
+  }
+  
+  .table-content {
+    background-color: rgb(252, 216, 124);
+  }
+  
+  tr {
+    text-align: $alignment;
+  }
+  
+  footer {
+    font-size: x-large;
+    justify-content: $alignment;
+    align-items: $alignment;
+    text-align: $alignment;
+    background-color: gray;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: $screen;
+  }
+  
+  time {
+    color: white;
+    background-color: gray;
+    align-items: $alignment;
+  }
+  
+  @media only screen and (min-width: 267px) {
+    label {
+      font-size: 25px;
+    }
+  
+    input, textarea {
+      height: 25px;
+      width: 200px;
+    }
+  
+    body {
+      > h1 {
+        font-size: 40px;
+        text-align: $alignment;
+      }
+  
+      > p {
+        font-size: 20px;
+        text-align: $alignment;
+      }
+    }
+  
+    .navbar-list {
+      gap: 30px;
+    }
+  
+    tr {
+      font-size: 25px;
+    }
+  
+    footer {
+      margin-top: 250px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (max-width: 467px) {
+    .grid-container {
+      padding-bottom: 100px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 10px;
+    }
+  
+    footer {
+      position: relative;
+    }
+  }
+  
+  @media only screen and (min-width: 467px) {
+    label {
+      font-size: 35px;
+    }
+  
+    input, textarea {
+      height: 35px;
+      width: 250px;
+    }
+  
+    body {
+      > h1 {
+        font-size: 50px;
+        text-align: $alignment;
+      }
+  
+      > p {
+        font-size: 25px;
+        text-align: $alignment;
+      }
+    }
+  
+    .navbar-list {
+      gap: 50px;
+    }
+  
+    tr {
+      font-size: 30px;
+    }
+  
+    footer {
+      margin-top: 200px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (min-width: 767px) {
+    .navbar-list {
+      gap: 70px;
+    }
+  
+    .grid-container {
+      padding-bottom: 190px;
+    }
+  
+    body {
+      > h1 {
+        font-size: 70px;
+      }
+  
+      > p {
+        font-size: 35px;
+      }
+    }
+  
+    tr {
+      font-size: 50px;
+    }
+  
+    footer {
+      margin-top: 200px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .navbar-list {
+      gap: 100px;
+    }
+  
+    body {
+      > h1 {
+        font-size: 70px;
+      }
+  
+      > p {
+        font-size: 35px;
+      }
+    }
+  
+    tr {
+      font-size: 50px;
+    }
+  
+    footer {
+      margin-top: 200px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (max-height: 600px) {
+    .topbar {
+      padding-bottom: 100px;
+    }
+  
+    body {
+      height: fit-content;
+      width: 100vw;
+  
+      > h1 {
+        font-size: 70px;
+      }
+  
+      > p {
+        font-size: 35px;
+      }
+    }
+  
+    tr {
+      font-size: 50px;
+    }
+  
+    footer {
+      margin-top: 100px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (min-height: 800px) and (max-height: 999px) {
+    footer {
+      margin-top: 280px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (min-height: 1000px) and (max-height: 1100px) {
+    .topbar {
+      padding-bottom: 200px;
+    }
+  }
+  
+  @media only screen and (min-height: 1101px) and (max-height: 1250px) {
+    .topbar {
+      padding-bottom: 300px;
+    }
+  }
+  
+  @media only screen and (min-height: 1251px) {
+    .topbar {
+      padding-bottom: 380px;
+    }
+  
+    body {
+      > h1 {
+        font-size: 70px;
+      }
+  
+      > p {
+        font-size: 35px;
+      }
+    }
+  
+    tr {
+      font-size: 50px;
+    }
+  
+    footer {
+      margin-top: 380px;
+      position: relative;
+    }
+  }
+  
