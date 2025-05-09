@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 
-// React.memo ensures this component only re-renders when props change
 const PureComponent = React.memo(function PureComponent({ weekday }) {
   useEffect(() => {
     const interval = setInterval(() => {
@@ -8,7 +7,7 @@ const PureComponent = React.memo(function PureComponent({ weekday }) {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [weekday]); // will re-run when 'weekday' changes
+  }, [weekday]);
 
   return (
     <div>
